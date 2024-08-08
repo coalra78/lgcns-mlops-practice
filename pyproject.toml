@@ -1,9 +1,10 @@
 [project]
 name = "lgcns-mlops-practice"
-version = "1.0.0"
-description = "A project for MLOps lecture in LG CNS"
+version = "0.1.0"
+description = "Default template for PDM package"
 authors = [
     {name = "Jaeyoon Han", email = "otzslayer@gmail.com"},
+    {name = "coalra78", email = "coalra78@naver.com"},
 ]
 dependencies = [
     "bentoml>=1.2.6",
@@ -20,6 +21,7 @@ dependencies = [
 ]
 requires-python = "==3.9.*"
 license = {text = "MIT"}
+readme = "README.md"
 
 
 [project.optional-dependencies]
@@ -30,6 +32,7 @@ dev = [
     "isort>=5.13.2",
     "mypy>=1.9.0",
     "jupyter>=1.0.0",
+    "pip>=24.2",
 ]
 [tool.pdm]
 distribution = false

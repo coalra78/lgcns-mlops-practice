@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
     logger.debug("Set an mlflow experiment")
     # Set experiment name for mlflow
-    experiment_name = "new_experiment"
+    experiment_name = "new_experiment_with_log"
     mlflow.set_experiment(experiment_name=experiment_name)
     mlflow.set_tracking_uri("./mlruns")
 
@@ -73,7 +73,7 @@ if __name__ == "__main__":
             score_cv = rmse_cv_score(regr, X, y)
 
             logger.info(
-                "Cross-Validation RMSE score for Run"
+                "CV RMSE score for Run"
                 " {}: {:.4f} (std = {:.4f})".format(
                     i, score_cv.mean(), score_cv.std()
                 )
